@@ -127,6 +127,16 @@ Slide : noQ
 
 Ces presets sont disponibles dans les 4 fichier .cfg
 
+si vous le souhaitez voici quelques pistes pour obtenir un instruments que vous voulez :
+utiliser un petit sustain permet d'avoir de beau accord, et au contraire, un grand sustain fait un accord plus trash/dirty
+un attque et un release élever permet un son plus doux
+decay permet de créer un acoud au départ, ou une pause après touche si max et mis à 0
+pour modifier le timbre sonore, la meilleurs façon de s'y prendre est de modifier sustain et duty cycle
+pour obtenir une attaque puis un sustain sans coupur, il faut que max soit équivalent à sustain
+pour créer un son de corde ( touche frapper ou pincer qui s'atténue avec le temps) il faut un decay élever, avec un release identique, ainsi qu'un sustaine superieur à 1.
+
+
+
 Dépannage rapide
 Aucun son sur une corde
 → vérifier le câblage des cords
