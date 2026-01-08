@@ -1,3 +1,145 @@
-Notice d'utiliisation du spectrosynth:
+Notice d’utilisation — Spectrosynth
+Présentation
+Le Spectrosynth est un synthétiseur expérimental à trois cordes, contrôlé par trois capteurs analogiques et un moteur sonore PWM.
+Il permet de créer des sons expressifs grâce à :
 
-software :
+4 banques d’instruments (Voix 1 à Voix 4)
+un moteur ADSR complet
+un mode Slide (quantifié ou continu)
+des réglages de forme d’onde (niveau max + largeur d’impulsion)
+un menu vertical ergonomique
+un mode PLAY minimaliste avec lien vers la notice en ligne
+
+Navigation dans les menus
+Boutons :
+UP → naviguer vers la droite
+DOWN → naviguer vers la gauche
+OK → entrer dans un menu / valider
+CANCEL → revenir en arrière / entrer en mode PLAY
+
+Structure du menu principal :
+Code
+Voix 1   Voix 2   Voix 3   Voix 4
+La voix active est marquée par un symbole vue entouré et double flèche.
+
+Modifier une voix
+Chaque voix contient trois sous‑menus :
+
+Form   ADSR   Slide
+
+
+1. Form
+Réglages de la forme d’onde PWM :
+Max → niveau maximal (volume du pic d’attaque)
+Dty → largeur d’impulsion (timbre)
+Valeurs : 0.0 à 10.0 (pas de 0.1)
+
+
+
+2. ADSR
+Attack → vitesse d’attaque
+Decay → transition vers le sustain
+Sustain → niveau maintenu
+Release → relâchement
+Valeurs : 0.0 à 10.0 (pas de 0.1)
+
+
+
+3. Slide
+Q → quantification (notes fixes)
+noQ → glissando continu (pitch fluide)
+Le mode actif est marqué par un symbole vue entouré et double flèche.
+
+Jouer du Spectrosynth
+Le moteur sonore est toujours actif, même dans les menus.
+
+
+
+Chaque corde :
+détecte si elle est “touchée” (valeur > 0.05 V)
+déclenche un ADSR complet
+génère une fréquence interpolée ou quantifiée
+applique la largeur d’impulsion choisie
+
+
+
+affichage d'aide (affichage minimal)
+Depuis le menu root, appuie sur CANCEL :
+l’écran affiche :
+Notice :
+bit.ly/
+Spectro
+Synth
+appuie sur OK pour revenir au menu
+
+🎼 Créer ses propres instruments
+Chaque voix est enregistrée dans un fichier :
+voix1.cfg
+voix2.cfg
+voix3.cfg
+voix4.cfg
+
+Tu peux :
+modifier les paramètres via le menu
+sauvegarder automatiquement
+créer des presets différents pour chaque voix
+
+
+
+Exemples de sons (à compléter par toi)
+Voici quelques suggestions de combinaisons (tu pourras ajouter les tiennes) :
+
+Lead doux
+Max : 0.4
+Dty : 0.3
+Attack : 0.2
+Decay : 0.5
+Sustain : 0.3
+Release : 0.4
+Slide : noQ
+
+Pluck sec
+Max : 0.8
+Dty : 0.2
+Attack : 0.0
+Decay : 0.2
+Sustain : 0.1
+Release : 0.1
+Slide : Q
+
+Glide violon
+Max : 0.6
+Dty : 0.5
+Attack : 0.4
+Decay : 0.6
+Sustain : 0.4
+Release : 0.5
+Slide : noQ
+
+carré simple
+Max : 0
+Dty : 0.5
+Attack : 0
+Decay : 0
+Sustain : 0.1
+Release : 0
+Slide : noQ
+
+
+
+Dépannage rapide
+Aucun son sur une corde
+→ vérifier le câblage des cords
+→ vérifier que la valeur dépasse 0.05 V
+
+Le son est trop faible
+→ augmenter “Max” dans Form
+→ augmenter Sustain
+
+Le son est trop agressif
+→ augmenter Attack
+→ réduire Max
+→ augmenter Decay
+
+Le pitch saute
+→ passer en mode Slide = Q
