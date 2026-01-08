@@ -89,31 +89,31 @@ créer des presets différents pour chaque voix
 Exemples de sons (à compléter par toi)
 Voici quelques suggestions de combinaisons (tu pourras ajouter les tiennes) :
 
-Lead doux
-Max : 0.4
-Dty : 0.3
-Attack : 0.2
-Decay : 0.5
-Sustain : 0.3
-Release : 0.4
+drone doux
+Max : 0.1
+Dty : 0.1
+Attack : 1
+Decay : 0
+Sustain : 0.1
+Release : 3
 Slide : noQ
 
-Pluck sec
-Max : 0.8
-Dty : 0.2
-Attack : 0.0
+dirty Solo
+Max : 0.4
+Dty : 2
+Attack : 0.2
 Decay : 0.2
 Sustain : 0.1
-Release : 0.1
+Release : 0.2
 Slide : Q
 
-Glide violon
-Max : 0.6
-Dty : 0.5
-Attack : 0.4
-Decay : 0.6
-Sustain : 0.4
-Release : 0.5
+Glid violon
+Max : 0.5
+Dty : 0.1
+Attack : 0.1
+Decay : 0.2
+Sustain : 0.2
+Release : 0.3
 Slide : noQ
 
 carré simple
@@ -125,7 +125,7 @@ Sustain : 0.1
 Release : 0
 Slide : noQ
 
-
+Ces presets sont disponibles dans les 4 fichier .cfg
 
 Dépannage rapide
 Aucun son sur une corde
