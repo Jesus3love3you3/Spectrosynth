@@ -1,0 +1,8 @@
+Attention à:
+vérifier si le composants n'est pas déjà dans la réserve
+vérifier si les numéro de commande sont bien ceux du site, et non ce du fabriquant.
+vérifier de ne pas mettre de mouser.ch car digikey l'a souvent.
+Vérifier la disponibilité 
+vérifier les temps de livraison
+vérifier si le CAD est disponible.
+vérifier les quantité minimume
